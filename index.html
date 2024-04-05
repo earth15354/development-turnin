@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development Turnin</title>
+    <link rel="stylesheet" href="styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body id="body">
+    <h1>Development Portfolio</h1>
+    <h4><a href="https://uiux-development-app.vercel.app/">App Link</a></h4>
+    <h4><a href="https://github.com/earth15354/development-app/tree/main">Github Link (for README)</a></h4> 
+    <!-- <h4><a href="http://www.audreygroup.com/AudreyCafeBistroThongLoSoi11.html#menu">Orignal Website</a></h4>
+    <h4><a href="https://earth15354.github.io/earth-responsive-redesign/">Redesigned Website</a></h4> -->
+    <br>
+    <h2>Introduction</h2>
+    <img id="img" alt="Designed app image" src="./assets/computer1.png"/>
+    <div class="paragraphs">
+        <p>
+            This project for my User Interface and User Experience class involves creating an app with a "favoring function". 
+            A favoring function is just any function in an app that allows the user to create a sublist of "favorite" objects.
+            In my case, I tried to create a music app where users can place their favorite songs in a favorites playlist.
+            To design this app, I did a comparative analysis on other websites with favoring functions and determined which functionalities
+            I wanted to implement. Furthermore, as part of the assignment, I implemented a couple ways for users to sort and filter the database of songs; 
+            so users can search for songs more easily.
+        </p>
+    </div>
+    
+    <h2>Part 1: Comparative Analysis</h2>
+    <img id="img" alt="Orignal website image" src="./assets/comparative_analysis.png"/>
+    <p class="key">
+        <a href="https://open.spotify.com/">Spotify link, </a>
+        <a href="https://www.youtube.com/">Youtube link, </a> 
+        <a href="https://www.google.com/maps">Google Maps link</a>
+    </p>
+    <p>
+        Legend:
+        <ul>
+            <li>Sort in alphabetical order: Can sort by an element (ex. title, author, etc.) of the searched objects in alphabetical order</li>
+            <li>Sort by recency: Can sort by the recency in which displayed elements were created or added to the group</li>
+            <li>Add favorites button: Has a button to add an item to "favorites" (method of adding to favorites is clear)</li>
+            <li>Search tool: Can filter or search through the dataset of elements using a searchbar tool.</li>
+            <li>Multiple playlists or save spots: Has functionality for multiple "favorites" sections users can save to; usually for organization</li>
+            <li>Suggested things to add: Provides suggestions for items to add to favorites based on previous selections</li>
+            <li>
+                Filter by type: Can filter results by a certain label assigned to each item (ex. Spotify has song genres, Youtube has video subject matter, Google maps has
+                categories for each location: like restaurants or gas stations)
+            </li>
+        </ul>
+    </p>
+    <div class="paragraphs">
+        <p>
+            From the comparison chart, it looks like Spotify and Youtube provide more options for users to filter and sort data for ease of adding to a list of favorites compared to Google Maps.
+            We can conclude this from how both Spotify and Youtube provide suggestions for things to add to the users' favorites, while Google Maps does not. Furthermore, unlike Google Maps, Spotify offers
+            additional alphabetical sorting of data and Youtube provides recency sorting of data. In my opinions, such features make it easier for users to 
+            find new items to add to their favorites, because suggestions may pique some users' interest and sorting allows data to be more organized, and thus, more easy for users to look at and select from.
+            However, I do not think this means Google Maps is a "worse app", it just means that they prioritize the use of their favorites function less than Spotify and Youtube; which makes sense,
+            considering both Youtube and Spotify exist for the sole purpose of presenting content, while Google Maps offers other (potentially more important) functionalities such as giving directions. 
+        </p>
+    </div>
+
+    <div class="paragraphs">
+        <p>
+            For my project, I decided to take more elements from Spotify, since I'm also trying to develop a music app, so I decided to create a system where
+            users can sort songs by title or artist alphabetically. Furthermore, as all apps I compared had very intuitive "add to favorites" buttons, I decided to
+            do the same. Lastly, I implemented a filter by genre because all the apps I looked at had some "filtering by type".
+        </p>
+    </div>
+
+    <div class="paragraphs">
+        <p>
+            Note: I decided not to implement some things I noticed, such as the search bar and multiple playlists/save spots because I think it would be outside the scope
+            of this assignment.
+        </p>
+    </div>
+
+    <h2>Part 2: Implementation</h2>
+    <div class="imgs">
+        <img id="small-img" alt="Sorting by title" src="./assets/sort_title.png"/>
+        <img id="small-img" alt="Filter by pop genre" src="./assets/filter_pop.png"/>
+        <img id="small-img" alt="Stack filter by sub 3 minutes" src="./assets/filter_3mins.png"/>
+    </div>
+    <div class="paragraphs">
+        <p>
+            As shown in the image above, the designed app offers both sorting and filtering functionalities.
+            <br>
+            The leftmost image shows the list of songs being sorted alphabetically by title after the user clicks 
+            on the "sort" and "title" dropdown items. 
+            <br>
+            The middle image shows the filtering functionality of the app. After the user navigates from the "filter" dropdown
+            menu to the pop genre, then only pop songs are left in the list of songs to select. 
+            <br>
+            The rightmost image shows that filtering can also stack. After adding an additional filter of keeping only sub-three-minute songs,
+            there is only one song remaining in the list because the "pop" filter is stacked with the "&#60;3 mins" filter. 
+        </p>
+    </div>
+    <img id="img" alt="Adding to favorites" src="./assets/adding_favorite.png"/>
+    <div class="paragraphs">
+        <p>
+            Finally, the app allows users to add to their list of favorite songs by clicking the "add to favorites" button next to the songs
+            they want to add. This functionality is shown above when the user adds "Don't Lose Sight" to their list. Furthermore, I made it so 
+            duplicate songs can't be added again, because it is less likely users will want to add the same song to the favorites list twice. However ideally,
+            this should be made into an option for users, so if I could improve on the app, I would have a confirmation screen pop up when 
+            a duplicate song is added.
+        </p>   
+    </div>
+    <div class="imgs">
+        <img id="up-img" alt="Sorting by title" src="./assets/phone1.png"/>
+        <img id="up-img" alt="Filter by pop genre" src="./assets/phone2.png"/>
+    </div>
+    <div class="paragraphs">
+        <p>
+            The above images show the interface on my phone 13 phone screen. When the screen is more narrow 
+            (when the screen width is smaller than a certain threshold), the interface changes such that the favorites
+            list is no longer on the right of the screen, but is instead a dropdown menu for users to click on to see their favorite songs.
+        </p>
+    </div>
+
+    <div class="imgs">
+        <img id="up-img" alt="Sorting by title" src="./assets/tablet1.png"/>
+        <img id="up-img" alt="Filter by pop genre" src="./assets/tablet2.png"/>
+    </div>
+    <div class="paragraphs">
+        <p>
+            The above images show the interface on a tablet sized screen. You can see the two different interfaces
+            (with the favorites section as a dropdown menu vs. to the right of the screen) when the tablet screen is tilted
+            sideways instead of straight.
+        </p>
+    </div>
+
+    <h2>Part 3: Conclusions</h2>
+    <div class="paragraphs">
+        <p>
+            Overall, I think the app turned out quite well, there were a few things that I wish I could have improved on given more time.
+            One example, as mentioned previously, was a popup menu when users try to add duplicate songs. In addition to this, I would like 
+            to improve the vertical phone interface. When the screen is too narrow, it looks like the songs get very squished, and I think that could
+            be solved with more tweeks to the narrower design. Finally, I realized users cannot remove items from the cart without reloading the page,
+            which I think could get annoying if users have very long carts and accidentally add songs. I would love to implement a "remove from favorites"
+            button in the future.
+        </p>
+    </div>
+  </body>
